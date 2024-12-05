@@ -1,4 +1,5 @@
 1. **Skrypt testujący DuckDuckGo**
+
 test_duckduckgo.py
 
 Skrypt testuje funkcję wyszukiwania na stronie DuckDuckGo. Skrypt sprawdza, czy:
@@ -7,6 +8,7 @@ Skrypt testuje funkcję wyszukiwania na stronie DuckDuckGo. Skrypt sprawdza, czy
 - Wyszukiwanie frazy "Best programming practices in Python" działa,
 - Wyniki wyszukiwania zawierają odpowiednie elementy,
 - Pierwszy wynik wyszukiwania zawiera słowo "Python" lub "Programming".
+
 Kroki:
 
 - Przejście na stronę DuckDuckGo.
@@ -17,7 +19,9 @@ Kroki:
 - Weryfikacja obecności wyników.
 - Sprawdzenie treści pierwszego wyniku.
 - Wydruk komunikatu o zakończeniu testu.
+
 2. **Skrypt testujący Google** 
+
 test_google.py
 
 Skrypt testuje wyszukiwanie na Google, sprawdzając:
@@ -26,6 +30,7 @@ Skrypt testuje wyszukiwanie na Google, sprawdzając:
 - Wyszukiwanie frazy "Python automation testing",
 - Obecność wyników wyszukiwania,
 - Czy wyniki wyszukiwania zawierają frazę "Python".
+
 Kroki:
 
 - Przejście na stronę Google.
@@ -36,7 +41,9 @@ Kroki:
 - Sprawdzenie tytułu wyników.
 - Weryfikacja obecności wyników.
 - Weryfikacja adresu URL pod kątem frazy "Python".
+
 3. **Skrypt testujący Wikipedię**
+
 test_wikipedia.py
 
 Skrypt testuje wyszukiwanie i nawigację na stronie Wikipedii, sprawdzając:
@@ -44,6 +51,7 @@ Skrypt testuje wyszukiwanie i nawigację na stronie Wikipedii, sprawdzając:
 - Poprawność otwarcia strony,
 - Wyszukiwanie frazy "Python programming",
 - Obecność sekcji z wynikami oraz poprawność linków wewnętrznych.
+- 
 Kroki:
 
 - Przejście na stronę Wikipedii.
@@ -55,6 +63,7 @@ Kroki:
 - Sprawdzenie tytułu nowej strony.
 - Weryfikacja obecności słowa "syntax" na nowej stronie.
 4. **Skrypt testujący Joinero**
+
 test_joinero.py
 
 Skrypt testuje proces wyszukiwania i dodawania produktu do koszyka w sklepie Joinero:
@@ -62,6 +71,7 @@ Skrypt testuje proces wyszukiwania i dodawania produktu do koszyka w sklepie Joi
 - Poprawność otwarcia strony,
 - Funkcję wyszukiwania,
 - Dodanie produktu do koszyka oraz aktualizację liczby produktów w koszyku.
+
 Kroki:
 
 - Przejście na stronę Joinero.
