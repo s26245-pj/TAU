@@ -1,39 +1,74 @@
-1. **Test wyszukiwarki DuckDuckGo**
-Cel testu: Zweryfikowanie funkcjonalności wyszukiwania na stronie DuckDuckGo oraz poprawności wyników.
-Kroki testowe:
-Otwórz stronę główną DuckDuckGo.
--Sprawdź, czy tytuł strony zawiera frazę "DuckDuckGo".
--Wpisz frazę "Best programming practices in Python" w polu wyszukiwania i uruchom wyszukiwanie.
--Sprawdź, czy pojawiły się wyniki wyszukiwania.
--Upewnij się, że pierwszy wynik zawiera słowo "Python" lub "Programming".
-2. **Test strony e-commerce Joinero**
-Cel testu: Sprawdzenie procesu wyszukiwania produktu, przeglądania wyników i dodawania produktu do koszyka.
-Kroki testowe:
--Otwórz stronę główną Joinero.
--Sprawdź, czy tytuł strony zawiera frazę "Joinero".
--Wprowadź frazę "b" w polu wyszukiwania produktów.
--Wybierz pierwszy sugerowany wynik wyszukiwania.
--Sprawdź, czy załadowana strona produktu ma odpowiedni tytuł.
--Kliknij przycisk "Dodaj do koszyka".
--Upewnij się, że liczba produktów w koszyku zmienia się na "1".
-3. **Test wyszukiwarki Google**
-Cel testu: Weryfikacja poprawności działania wyszukiwarki Google oraz jakości wyników wyszukiwania.
-Kroki testowe:
--Otwórz stronę główną Google.
--Zaakceptuj politykę prywatności, jeśli komunikat jest widoczny.
--Sprawdź, czy tytuł strony zawiera frazę "Google".
--Wprowadź frazę "Python automation testing" w polu wyszukiwania i uruchom wyszukiwanie.
--Sprawdź, czy wyniki wyszukiwania zostały załadowane.
--Upewnij się, że tytuł wyników wyszukiwania zawiera frazę "Python automation testing".
--Zweryfikuj, czy URL strony zawiera słowo "Python".
-4. **Test strony Wikipedia**
-Cel testu: Sprawdzenie funkcji wyszukiwania oraz nawigacji między artykułami na Wikipedii.
-Kroki testowe:
--Otwórz stronę główną Wikipedii.
--Sprawdź, czy tytuł strony zawiera frazę "Wikipedia".
--Wpisz frazę "Python programming" w polu wyszukiwania i uruchom wyszukiwanie.
--Sprawdź, czy załadowany artykuł ma tytuł zawierający słowo "Python".
--Zweryfikuj, czy treść artykułu zawiera frazę "language".
--Kliknij pierwszy link w głównej sekcji artykułu.
--Sprawdź, czy tytuł nowej strony zawiera tekst wybranego linku.
--Upewnij się, że treść nowej strony zawiera słowo "syntax".
+1. **Skrypt testujący DuckDuckGo**
+test_duckduckgo.py
+
+Skrypt testuje funkcję wyszukiwania na stronie DuckDuckGo. Skrypt sprawdza, czy:
+
+- Strona DuckDuckGo otwiera się poprawnie,
+- Wyszukiwanie frazy "Best programming practices in Python" działa,
+- Wyniki wyszukiwania zawierają odpowiednie elementy,
+- Pierwszy wynik wyszukiwania zawiera słowo "Python" lub "Programming".
+Kroki:
+
+- Przejście na stronę DuckDuckGo.
+- Sprawdzenie tytułu strony.
+- Wpisanie frazy w pole wyszukiwania.
+- Oczekiwanie na załadowanie wyników.
+- Sprawdzenie tytułu wyników.
+- Weryfikacja obecności wyników.
+- Sprawdzenie treści pierwszego wyniku.
+- Wydruk komunikatu o zakończeniu testu.
+2. **Skrypt testujący Google** 
+test_google.py
+
+Skrypt testuje wyszukiwanie na Google, sprawdzając:
+
+- Poprawność otwarcia strony Google,
+- Wyszukiwanie frazy "Python automation testing",
+- Obecność wyników wyszukiwania,
+- Czy wyniki wyszukiwania zawierają frazę "Python".
+Kroki:
+
+- Przejście na stronę Google.
+- Zaakceptowanie polityki prywatności (jeśli jest obecna).
+- Sprawdzenie tytułu strony.
+- Wpisanie frazy w pole wyszukiwania i potwierdzenie Enterem.
+- Oczekiwanie na wyniki.
+- Sprawdzenie tytułu wyników.
+- Weryfikacja obecności wyników.
+- Weryfikacja adresu URL pod kątem frazy "Python".
+3. **Skrypt testujący Wikipedię**
+test_wikipedia.py
+
+Skrypt testuje wyszukiwanie i nawigację na stronie Wikipedii, sprawdzając:
+
+- Poprawność otwarcia strony,
+- Wyszukiwanie frazy "Python programming",
+- Obecność sekcji z wynikami oraz poprawność linków wewnętrznych.
+Kroki:
+
+- Przejście na stronę Wikipedii.
+- Sprawdzenie tytułu strony.
+- Wpisanie frazy w pole wyszukiwania.
+- Oczekiwanie na załadowanie artykułu.
+- Sprawdzenie obecności słowa "language" w treści artykułu.
+- Znalezienie pierwszego linku w artykule i kliknięcie go.
+- Sprawdzenie tytułu nowej strony.
+- Weryfikacja obecności słowa "syntax" na nowej stronie.
+4. **Skrypt testujący Joinero**
+test_joinero.py
+
+Skrypt testuje proces wyszukiwania i dodawania produktu do koszyka w sklepie Joinero:
+
+- Poprawność otwarcia strony,
+- Funkcję wyszukiwania,
+- Dodanie produktu do koszyka oraz aktualizację liczby produktów w koszyku.
+Kroki:
+
+- Przejście na stronę Joinero.
+- Sprawdzenie tytułu strony.
+- Wyszukanie produktu za pomocą pola wyszukiwania.
+- Wpisanie litery "b" w polu wyszukiwania.
+- Oczekiwanie na sugestie wyszukiwania.
+- Wybranie pierwszej sugestii.
+- Znalezienie i kliknięcie przycisku "Dodaj do koszyka".
+- Sprawdzenie liczby produktów w koszyku.
